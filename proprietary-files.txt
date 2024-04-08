@@ -113,6 +113,7 @@ vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/backend_conf.xml
 vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
+vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
 
@@ -126,6 +127,93 @@ vendor/lib64/libkaraokepal.so
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
+
+# Audio graph manager
+vendor/bin/agmcap
+vendor/bin/agmcompressplay
+vendor/bin/agmplay
+vendor/bin/cplay
+vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
+vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
+-vendor/lib/libagm.so
+vendor/lib/libagm_compress_plugin.so
+vendor/lib/libagm_mixer_plugin.so
+vendor/lib/libagm_pcm_plugin.so
+vendor/lib/libagmclient.so
+vendor/lib/libagmmixer.so
+-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
+-vendor/lib64/libagm.so
+vendor/lib64/libagm_compress_plugin.so
+vendor/lib64/libagm_mixer_plugin.so
+vendor/lib64/libagm_pcm_plugin.so
+vendor/lib64/libagmclient.so
+vendor/lib64/libagmmixer.so
+-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
+
+# Audio libraries
+vendor/etc/models/acd/event.eai
+vendor/etc/models/acd/music.eai
+vendor/etc/models/acd/speech.eai
+vendor/lib/hw/audio.primary.taro.so
+vendor/lib/hw/gyro_fusion_interface.so
+vendor/lib/libadm.so
+vendor/lib/libadsprpc.so
+vendor/lib/libar-acdb.so
+vendor/lib/libar-gpr.so
+vendor/lib/libar-gsl.so
+-vendor/lib/libar-pal.so
+vendor/lib/libats.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudiocloudctrl.so
+vendor/lib/libaudioroute_ext.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcapiv2svacnnvendor.so
+vendor/lib/libcapiv2svarnnvendor.so
+vendor/lib/libcapiv2uvvendor.so
+vendor/lib/libfmpal.so
+vendor/lib/libkaraokepal.so
+vendor/lib/liblx-ar_util.so
+vendor/lib/liblx-osal.so
+vendor/lib/libmcs.so
+vendor/lib/libpal_net_if.so
+vendor/lib/libpalclient.so
+vendor/lib/libqtigefar.so
+vendor/lib/libresampler.so
+vendor/lib/libsndcardparser.so
+vendor/lib/libxlog.so
+vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib/vendor.qti.hardware.pal@1.0.so
+vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/hw/gyro_fusion_interface.so
+vendor/lib64/libadm.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libar-acdb.so
+vendor/lib64/libar-gpr.so
+vendor/lib64/libar-gsl.so
+-vendor/lib64/libar-pal.so
+vendor/lib64/libats.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudiocloudctrl.so
+vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libbatterylistener.so
+vendor/lib64/libcapiv2svacnnvendor.so
+vendor/lib64/libcapiv2svarnnvendor.so
+vendor/lib64/libcapiv2uvvendor.so
+vendor/lib64/libfmpal.so
+vendor/lib64/libkaraokepal.so
+vendor/lib64/liblx-ar_util.so
+vendor/lib64/liblx-osal.so
+vendor/lib64/libmcs.so
+vendor/lib64/libpal_net_if.so
+vendor/lib64/libpalclient.so
+vendor/lib64/libqtigefar.so
+vendor/lib64/libresampler.so
+vendor/lib64/libsndcardparser.so
+vendor/lib64/libxlog.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Batterysecret
 vendor/bin/batterysecret
@@ -1010,6 +1098,30 @@ vendor/firmware/evautil64.mdt
 product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_m11a_42_02_0a_dsc_cmd_mi.xml
+
+# Dolby Atmos
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdeccfg.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libstagefright_soft_ddpdec.so
+vendor/lib64/libstagefrightdolby.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Fingerprint
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
