@@ -24,6 +24,22 @@ PRODUCT_PACKAGES += \
     WifiResMondrian \
     WifiResMondrianCN
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    MiStcImpl \
+    SDM \
+    SDM-histogram \
+    SRE \
+    WifiHAL \
+    cnss-daemon \
+    libcitsensorservice@2.0-impl \
+    libsensor-displayalgo \
+    libsensor-parseRGB \
+    libsensor-ssccalapi \
+    sensors \
+    vendor.qti.hardware.display.composer-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
