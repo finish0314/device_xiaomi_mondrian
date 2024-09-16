@@ -434,4 +434,7 @@
         <item>2882</item>
         <item>124</item>
     </integer-array>
+
+     <!-- Whether devices suports in-display fingerprint when screen is off -->
+     <bool name="config_supportScreenOffUdfps">true</bool>
 </resources>
