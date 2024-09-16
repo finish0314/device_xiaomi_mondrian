@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# NFC
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.nfc.camera.pause_polling=true
+
 # Inherit from xiaomi sm8450-common
 $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 
