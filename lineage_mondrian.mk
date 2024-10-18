@@ -24,11 +24,10 @@ PRODUCT_SYSTEM_NAME := mondrian
 PRODUCT_SYSTEM_DEVICE := mondrian
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="mondrian_global-user 14 UKQ1.230804.001 V816.0.10.0.UMNMIXM release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := Redmi/mondrian/mondrian:12/SKQ1.230804.001/V816.0.10.0.UMNMIXM:user/release-keys
+    BuildDesc="mondrian-user 12 SKQ1.230401.001 V816.0.10.0.UMNCNXM release-keys" \
+    BuildFingerprint=Redmi/mondrian/mondrian:12/SKQ1.230401.001/V816.0.10.0.UMNCNXM:user/release-keys \
+    DeviceProduct=mondrian \
+    SystemName=mondrian
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
