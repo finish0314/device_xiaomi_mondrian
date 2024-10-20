@@ -10,6 +10,8 @@ $(call inherit-product, device/xiaomi/mondrian/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+-include vendor/derp-priv/keys/keys.mk
+
 PRODUCT_NAME := derp_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
