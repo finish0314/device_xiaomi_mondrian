@@ -9,14 +9,11 @@ LOCAL_OVERRIDES_PACKAGES := \
     AdaptiveVPNPrebuilt \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
-    Chrome \
-    Chrome-Stub \
     Drive \
     Eleven \
     Flash \
     FossifyGallery \
     Maps \
-    Photos \
     PrebuiltGmail \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
