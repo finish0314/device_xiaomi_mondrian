@@ -8,9 +8,9 @@
 $(call inherit-product, device/xiaomi/mondrian/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mondrian
+PRODUCT_NAME := derp_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -26,17 +26,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := POCO/mondrian_global/mondrian:14/UKQ1.230804.001/V816.0.8.0.UMNMIXM:user/release-keys
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 3200
+TARGET_SCREEN_WIDTH := 1440
+
+# GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_MINI_GAPPS := true
 
-# RisingOS stuff
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon 8+ Gen1" \
-    RISING_MAINTAINER="Finish211(Finish)"
-RISING_PACKAGE_TYPE := GAPPS
 TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := false
-
-# RisingOS GMS build flags
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-
