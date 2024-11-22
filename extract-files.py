@@ -60,6 +60,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libmialgoengine.so': blob_fixup().add_needed(
         'libprocessgroup_shim.so'
     ),
+    'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service': blob_fixup().add_needed(
+    'libstagefright_foundation-v33.so'
+    ),
 }
 
 module = ExtractUtilsModule(
