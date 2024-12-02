@@ -6,5 +6,5 @@
 
 runtime_resource_overlay {
     name: "NfcResMondrian",
-    device_specific: true,
+    vendor: true,
 }
