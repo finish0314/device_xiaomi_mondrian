@@ -17,10 +17,10 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-mondrian/device.mk)
 PRODUCT_NAME := lineage_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := 23013PC75G
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := 23013RK75C
 
-PRODUCT_SYSTEM_NAME := mondrian_global
+PRODUCT_SYSTEM_NAME := mondrian
 PRODUCT_SYSTEM_DEVICE := mondrian
 
 #PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -28,7 +28,7 @@ PRODUCT_SYSTEM_DEVICE := mondrian
 #    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
 #    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := POCO/mondrian_global/mondrian:14/UKQ1.230804.001/V816.0.10.0.UMNMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/mondrian/mondrian:12/SKQ1.230804.001/V816.0.10.0.UMNMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
