@@ -10,4 +10,9 @@ on boot
     chmod 0666 /sys/class/backlight/panel0-backlight/max_brightness
     chmod 0666 /sys/class/backlight/panel1-backlight/brightness
     chmod 0666 /sys/class/backlight/panel1-backlight/max_brightness
-
+    
+    # GameBar 2.0
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+    chown system system /sys/class/power_supply/battery/temp
+    chmod 0660 /sys/class/power_supply/battery/temp
