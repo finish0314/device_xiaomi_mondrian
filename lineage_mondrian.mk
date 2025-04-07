@@ -24,20 +24,12 @@ PRODUCT_SYSTEM_NAME := mondrian
 PRODUCT_SYSTEM_DEVICE := mondrian
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mondrian-user 12 SKQ1.230401.001 V816.0.10.0.UMNCNXM release-keys" \
-    BuildFingerprint=Redmi/mondrian/mondrian:12/SKQ1.230401.001/V816.0.10.0.UMNCNXM:user/release-keys \
+    BuildDesc="mondrian_global-user 15 AQ3A.240912.001 OS2.0.5.0.VMNMIXM release-keys" \
+    BuildFingerprint=POCO/mondrian_global/mondrian:15/AQ3A.240912.001/OS2.0.5.0.VMNMIXM:user/release-keys \
     DeviceProduct=mondrian \
     SystemName=mondrian
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 8+ Gen1" \
-    RisingMaintainer="Finish(@Finish0314)"
-
-RISING_MAINTAINER="Finish(@Finish0314)"
-TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := false
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
 WITH_GMS := true
+TARGET_HAS_UDFPS := true
