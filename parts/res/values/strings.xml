@@ -15,65 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Xiaomi Settings -->
-    <string name="app_title">Xiaomi Settings</string>
-    <string name="tile_add">Add tile</string>
-    <string name="tile_added">Tile added</string>
-    <string name="tile_not_added">Tile not added</string>
-    <string name="tile_already_added">Tile already added</string>
-    <string name="tile_on">On</string>
-    <string name="tile_off">Off</string>
- 
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Thermal profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
-    <string name="thermal_default">No optimization</string>
-    <string name="thermal_benchmark">Performance</string>
-    <string name="thermal_browser">Browser</string>
-    <string name="thermal_camera">Camera</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gaming</string>
-    <string name="thermal_navigation">Navigation</string>
-    <string name="thermal_streaming">Streaming</string>
-    <string name="thermal_video">Video</string>
-
-    <!-- Per-app refresh rate -->
-    <string name="refresh_title">Per-app refresh rate</string>
-    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
-    <string name="refresh_default">Default</string>
-    <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
-    <string name="refresh_land">60Hz on Landscape</string>    
-
-    <!-- Doze Strings -->
-    <string name="doze_brightness_low">Low brightness</string>
-    <string name="doze_brightness_high">High brightness</string>
-    <string name="doze_brightness_adaptive">Adaptive brightness</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
-
-    <!-- Clear Speaker -->
-   <string name="clear_speaker_title">Clear speaker</string>
-   <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
-   <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
-
-    <!-- Saturation -->
-    <string name="saturation_title">Display Saturation</string>
-    <string name="saturation_summary">Control the saturation level of the display</string>
-    <string name="saturation_footer_summary">Changing the color mode in display settings will override the saturation level, requiring it to be reapplied.</string>
-
-    <!-- Image preview -->
-    <string name="image_preview_content_description">Preview</string>
-    <string name="image_preview_next_page_content_description">Next</string>
-    <string name="image_preview_previous_page_content_description">Previous</string>
-
-    <!-- Custom seekbar -->
-    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">by default</string>
-    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
-    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
-    
     <!-- Auto HBM -->
     <string name="auto_hbm_title">Automatic High Brightness Mode (HBM)</string>
     <string name="auto_hbm_main_switch_title">Use automatic HBM</string>
@@ -91,9 +32,19 @@
     <string name="auto_hbm_enable_time_title">Enable time</string>
     <string name="auto_hbm_enable_time_summary">Duration in seconds that the light threshold must be continuously met to activate HBM</string>
     <string name="auto_hbm_disable_time_title">Disable time</string>
-    <string name="auto_hbm_disable_time_summary">Duration in seconds for which HBM is deactivated if the light threshold falls below the set level</string>    
+    <string name="auto_hbm_disable_time_summary">Duration in seconds for which HBM is deactivated if the light threshold falls below the set level</string>   
 
-     <!-- GameBar Overlay -->
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_description">"If you find that the speaker is slightly clogged with dust, run this function 1-2 times. Please turn the media volume to maximum. If the speaker is seriously clogged, run this function 2-5 times while shaking the device speaker downward."</string>
+    <string name="clear_speaker_summary">Play 30 seconds of audio to clean the speaker</string>
+    <string name="clear_speaker_title">Clear Speaker</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_default_value">Default value</string>
+    <string name="custom_seekbar_default_value_to_set">"Default value: <xliff:g id="v">%s</xliff:g>\nPress and hold to set"</string>
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+
+    <!-- GameBar Overlay -->
     <string name="game_overlay_title">GameBar</string>
     <string name="game_overlay_summary">Enable the system overlay (FPS, Temp, etc.)</string>
     <string name="overlay_permission_required">Overlay permission is required</string>
@@ -101,5 +52,112 @@
     <string name="overlay_permission_denied">Overlay permission denied</string>
     <string name="game_overlay_tile_label">GameBar</string>
     <string name="game_overlay_tile_description">Toggle the game overlay</string>
+    <string name="enable_gamespace_overlay">Enable game floating window</string>
+    <string name="overlay_features">Floating window function</string>
+    <string name="enable_fps_info">Display frame rate information</string>
+    <string name="summary_fps_info">Display current frame rate on the screen</string>
+    <string name="enable_show_device_temp">Display device temperature</string>
+    <string name="summary_show_device_temp">Display device (battery) temperature</string>
+    <string name="enable_show_cpu_usage">CPU usage</string>
+    <string name="summary_show_cpu_usage">Display current CPU usage percentage</string>
+    <string name="enable_show_cpu_clock_speed">CPU clock speed</string>
+    <string name="summary_show_cpu_clock_speed">Show the current clock speed of each CPU core</string>
+    <string name="enable_show_cpu_temp">CPU temperature</string>
+    <string name="summary_show_cpu_temp">Show CPU temperature (thermal_zone0)</string>
+    <string name="enable_show_ram_usage">Memory usage</string>
+    <string name="summary_show_ram_useage">Show current memory usage in MB</string>
+    <string name="enable_show_gpu_usage">GPU usage</string>
+    <string name="summary_show_gpu_usage">Show GPU usage percentage</string>
+    <string name="enable_show_gpu_clock_speed">GPU clock speed</string>
+    <string name="summary_show_gpu_clock_speed">Show current GPU clock speed</string>
+    <string name="enable_show_gpu_temp">GPU temperature</string>
+    <string name="summary_show_gpu_temp">Show current GPU temperature</string>
+    <string name="custom_common">Custom settings</string>
+    <string name="text_size">Text size</string>
+    <string name="summary_text_size">Adjust floating window text size</string>
+    <string name="background_transparency">Background transparency</string>
+    <string name="summary_backgroud_transparency">Adjust floating window background transparency</string>
+    <string name="overlay_corner_radius">Floating window rounded corner</string>
+    <string name="summary_overlay_corner_radius">Adjust floating window rounded corner size</string>
+    <string name="overlay_padding">Floating window inner margin</string>
+    <string name="summary_overlay_padding">Adjust the spacing around the statistics</string>
+    <string name="overlay_item_spacing">Item spacing</string>
+    <string name="summary_overlay_item_spacing">Adjust the line spacing of the floating window</string>
+    <string name="overlay_update_interval">Update interval</string>
+    <string name="summary_overlay_update_interval">Set the frequency of floating window value updates</string>
+    <string name="overlay_title_color">Title color</string>
+    <string name="summary_overlay_title_color">"Set the color of text such as 'FPS', 'Temperature', 'CPU', etc."</string>
+    <string name="overlay_value_color">Value color</string>
+    <string name="summary_overlay_value_color">"Set the color of the value (such as '29', '32.0°C')"</string>
+    <string name="overlay_position">Floating window position</string>
+    <string name="summary_overlay_position">Select the position of the floating window on the screen</string>
+    <string name="overlay_format">Floating window format</string>
+    <string name="summary_overlay_format">Select full or compact display mode</string>
+    <string name="overlay_split_config">Split screen configuration</string>
+    <string name="overlay_split_mode">Split screen mode</string>
+    <string name="summary_overlay_split_mode">Select side-by-side or stacked arrangement</string>
+    <string name="overlay_gesture_control">Floating window gesture control</string>
+    <string name="overlay_single_tap_toggle">Enable single-tap switching</string>
+    <string name="summary_overlay_single_tap_toggle">Switch between full and compact display modes by single tap</string>
+    <string name="overlay_doubletap_capture">Enable double-tap capture</string>
+    <string name="summary_overlay_doubletap_capture">Double-click the floating window to start/stop capturing logs</string>
+    <string name="overlay_longpress_enable">Enable long press function</string>
+    <string name="summary_overlay_longpress_enable">Long press the floating window to access the game bar settings</string>
+    <string name="overlay_longpress_timeout">Long press time</string>
+    <string name="summary_overlay_longpress_timeout">Set the required time to long press the floating window</string>
+    <string name="overlay_log">Log capture</string>
+    <string name="overlay_capture_start">Start logging</string>
+    <string name="summary_overlay_capture_start">Start real-time capture of frame rate and performance data</string>
+    <string name="overlay_capture_stop">Stop logging</string>
+    <string name="summary_overlay_capture_stop">Stop real-time capture of frame rate and performance data</string>
+    <string name="overlay_capture_export">Export game bar log</string>
+    <string name="summary_overlay_capture_export">Save the captured frame rate and performance data as a CSV file</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Per-app refresh rate</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">60Hz</string>
+    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_land">60Hz on Landscape</string>    
+
+    <!-- Thermal profiles -->
+    <string name="thermal_default">No optimization</string>
+    <string name="thermal_benchmark">Performance</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Camera</string>
+    <string name="thermal_dialer">Phone</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_navigation">Navigation</string>
+    <string name="thermal_streaming">Streaming</string>
+    <string name="thermal_summary">Adjust app thermal profiles for best performance</string>
+    <string name="thermal_title">Thermal profiles</string>
+    <string name="thermal_video">Video</string>
+
+    <!-- Xiaomi Settings -->
+    <string name="tile_add">Add shortcut</string>
+    <string name="tile_not_added">Shortcut not added</string>
+    <string name="app_title">Additional settings</string>
+    <string name="tile_added">Shortcut not added</string>
+    <string name="tile_already_added">Shortcut added</string>
+    <string name="tile_on">Enable</string>
+    <string name="tile_off">Disable</string>
+
+    <!-- Doze Strings -->
+    <string name="doze_brightness_low">Low brightness</string>
+    <string name="doze_brightness_high">High brightness</string>
+    <string name="doze_brightness_adaptive">Adaptive brightness</string>
+    <string name="doze_brightness_title">Low power brightness level</string>
+    <string name="doze_brightness_summary">Brightness level of low power screen (percent of maximum allowed brightness)</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Display Saturation</string>
+    <string name="saturation_summary">Control the saturation of your display</string>
+    <string name="saturation_footer_summary">Changing the color mode in the display settings will override the saturation level and will require reapplying it. </string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Preview</string>
+    <string name="image_preview_next_page_content_description">Next</string>
+    <string name="image_preview_previous_page_content_description">Previous</string>
 
 </resources>
