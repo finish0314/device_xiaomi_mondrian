@@ -7,10 +7,10 @@
 # Inherit from mondrian device
 $(call inherit-product, device/xiaomi/mondrian/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common sun configuration
+$(call inherit-product, vendor/sun/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mondrian
+PRODUCT_NAME := sun_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
