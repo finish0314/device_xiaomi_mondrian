@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mondrian.mk
+    $(LOCAL_DIR)/sun_mondrian.mk
