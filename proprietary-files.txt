@@ -979,14 +979,12 @@ vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod
 vendor/lib64/libgf_hal.so
 
 # Graphics (Adreno firmware)
-vendor/firmware/a730_sqe.fw
 vendor/firmware/a730_zap.b00
 vendor/firmware/a730_zap.b01
 vendor/firmware/a730_zap.b02
 vendor/firmware/a730_zap.elf
 vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
-vendor/firmware/gmu_gen70000.bin
 
 # NFC configs
 vendor/etc/libnfc-nci.conf
