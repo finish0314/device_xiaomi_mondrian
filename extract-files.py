@@ -41,6 +41,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libalAILDC.so',
         'vendor/lib64/libalLDC.so',
         'vendor/lib64/libalhLDC.so',
+        'vendor/lib64/libMiVideoFilter.so',
     ): blob_fixup()
     .clear_symbol_version('AHardwareBuffer_allocate')
     .clear_symbol_version('AHardwareBuffer_describe')
