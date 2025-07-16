@@ -10,6 +10,8 @@ $(call inherit-product, device/xiaomi/mondrian/device.mk)
 # Inherit from common sun configuration
 $(call inherit-product, vendor/sun/config/common_full_phone.mk)
 
+-include vendor/xiaomi/addions/packages.mk
+
 PRODUCT_NAME := sun_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
