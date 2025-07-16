@@ -32,11 +32,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup().regex_replace(
         r'=([0-9]+)>', r'="\1">'
     ),
-    (
-        'vendor/lib64/hw/com.qti.chi.override.so',
-        'vendor/lib64/libcamxcommonutils.so',
-        'vendor/lib64/libmialgoengine.so',
-    ): blob_fixup().add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup().add_needed(
+        'libprocessgroup_shim.so'
+    ),
+    'vendor/lib64/libcamxcommonutils.so': blob_fixup().add_needed(
+        'libprocessgroup_shim.so'
+    ),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup().replace_needed(
         'vendor.qti.hardware.display.config-V2-ndk_platform.so',
         'vendor.qti.hardware.display.config-V2-ndk.so',
@@ -53,8 +54,12 @@ blob_fixups: blob_fixups_user_type = {
     .clear_symbol_version('AHardwareBuffer_lockPlanes')
     .clear_symbol_version('AHardwareBuffer_release')
     .clear_symbol_version('AHardwareBuffer_unlock'),
+
     'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service': blob_fixup().add_needed(
-    'libstagefright_foundation-v33.so'
+        'libstagefright_foundation-v33.so'
+    ),
+    'vendor/lib64/libmialgoengine.so': blob_fixup().add_needed(
+        'libprocessgroup_shim.so'
     ),
 }
 
