@@ -10,6 +10,8 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 
+WITH_ADB_INSECURE := true
+
 # Audio
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
@@ -24,7 +26,6 @@ PRODUCT_PACKAGES += \
     ApertureResMondrian \
     FrameworksResMondrian \
     FrameworksResMondrianGlobal \
-    LineageResMondrian \
     NfcResMondrian \
     SettingsProviderResMondrian \
     SettingsProviderResMondrianCN \
