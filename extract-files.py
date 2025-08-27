@@ -42,6 +42,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor.qti.hardware.display.config-V2-ndk.so',
     ),
     (
+        'vendor/lib64/libMiVideoFilter.so',
         'vendor/lib64/libTrueSight.so',
         'vendor/lib64/libalAILDC.so',
         'vendor/lib64/libalLDC.so',
