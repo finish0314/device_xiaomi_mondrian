@@ -13,12 +13,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := 23013RK75C
+PRODUCT_BRAND := POCO
+PRODUCT_MODEL := 23013PC75G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mondrian-user 15 SKQ1.240401.001 OS2.0.213.0.VMNCNXM release-keys" \
-    BuildFingerprint=Redmi/mondrian/mondrian:15/SKQ1.230401.001/OS2.0.213.0.VMNCNXM:user/release-keys \
+    BuildDesc="mondrian_global-user 15 AQ3A.240912.001 OS2.0.207.0.VMNMIXM release-keys" \
+    BuildFingerprint=POCO/mondrian_global/mondrian:15/AQ3A.240912.001/OS2.0.207.0.VMNMIXM:user/release-keys \
     DeviceName=mondrian \
     DeviceProduct=mondrian \
     SystemDevice=mondrian \
