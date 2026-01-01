@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BaiduNetworkLocation
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mondrian.rc
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResMondrian \
