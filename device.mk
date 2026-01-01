@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mondrian.rc
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResMondrian \
