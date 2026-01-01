@@ -1,0 +1,13 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot
+    # HBM
+    chmod 0666 /sys/class/backlight/panel0-backlight/brightness
+    chmod 0666 /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 0666 /sys/class/backlight/panel1-backlight/brightness
+    chmod 0666 /sys/class/backlight/panel1-backlight/max_brightness
+

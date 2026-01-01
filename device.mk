@@ -23,6 +23,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Gnss
+PRODUCT_PACKAGES += \
+    BaiduNetworkLocation
+
+# Init
+PRODUCT_PACKAGES += \
+    init.mondrian.rc
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResMondrian \

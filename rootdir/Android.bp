@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.mondrian.rc",
+    src: "etc/init.mondrian.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
